@@ -1,5 +1,5 @@
 import { ChatInputCommandInteraction, CommandInteraction, ContextMenuCommandInteraction, Interaction, InteractionType } from "discord.js";
-import { EventHandler } from "~lib"
+import { EventHandler } from "@lib"
 export default class InteractionCreate extends EventHandler {
     override async run(interaction: Interaction) {
         this.client.logger.info(
